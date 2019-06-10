@@ -1,0 +1,256 @@
+{
+  "version": "0.0.1",
+  "name": "opm-moon-basemap-v0-1",
+  "auth": {
+    "method": "open"
+  },
+  "layergroup": {
+    "version": "1.0.1",
+    "layers": [
+
+      {
+        "type": "plain",
+        "options": {
+            "color": "#8c8c8c",
+            "imageUrl": null
+        }
+      },
+
+      {
+        "type": "http",
+        "options": {
+            "urlTemplate": "https://s3.amazonaws.com/opmbuilder/301_moon/tiles/w/hillshaded-albedo/{z}/{x}/{y}.png",
+            "tms": true
+        }
+      },
+
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "[zoom>=6] {
+
+            #layer[layer='Contour Line, Major'] {
+              line-width: 2;
+              line-color: #ffffff;
+              line-opacity: 0.4;
+            }
+
+            #layer[layer='Contour Line, Minor'] {
+              line-width: 1;
+              line-color: #ffffff;
+              line-opacity: 0.4;
+            }
+
+          }",
+          "sql": "SELECT * FROM opmbuilder.opm_301_moon_contours_polygons_1km_interval"
+        }
+      },
+
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#layer {
+
+            text-name: [clean_name];
+            text-face-name: 'Open Sans Regular';
+            text-size: 10;
+            text-fill: #FFFFFF;
+            text-label-position-tolerance: 0;
+            text-halo-radius: 0;
+            text-halo-fill: #6F808D;
+            text-allow-overlap: true;
+            text-placement: interior;
+            text-placement-type: dummy;
+
+            [code='AL'],[code='AA'],[code='ER'],[code='LF'],[code='LG'],[code='PL'],[code='PM'],[code='PU'],[code='TA'],[code='TE'],[code='VS'],[code='ME']{
+
+              text-face-name: 'Open Sans Regular';
+
+             }
+
+            [code='AR'],[code='CA'],[code='CB'],[code='CH'],[code='CM'],[code='FR'],[code='FE'],[code='FL'],[code='FO'],[code='FM'],[code='FT'],[code='LA'],[code='LB'],[code='LC'],[code='FU'],[code='LI'],[code='LN'],[code='OC'],[code='PA'],[code='PR'],[code='RI'],[code='RU'],[code='SI'],[code='SU'],[code='SN'],[code='VI'],[code='VA'] {
+
+              text-face-name: 'Open Sans Italic';
+
+            }
+
+            [code='CO'],[code='CR'],[code='DO'],[code='FA'],[code='IN'],[code='MA'],[code='MN'],[code='MO'],[code='PE'],[code='RE'],[code='TH'],[code='SF'] {
+
+              text-face-name: 'Old Standard TT Italic';
+
+            }
+
+            [code='ME'],[code='PL'],[code='TA']{
+              text-transform: uppercase;
+            }
+
+
+           [zoom>=2][zoom<4]{
+
+             text-opacity: 0;
+
+             [code='PM'],[code='PL'],[code='TA'], [code='MO'], [code='VA'],  [code='ME'],  [code='OC'],[code='LC'],[code='SI'],[code='SF'],[code='AA'] {
+
+                [diameter>250] {
+
+                   text-fill: #ffffff;
+                  text-opacity: 1;
+                  text-wrap-width: 1;
+
+                  [diameter<=500]{
+                    text-size: 11;
+                  }
+                  [diameter>500][diameter<=1000]{
+                    text-size: 14;
+                  }
+                  [diameter>1000]{
+                    text-size: 16;
+                  }
+                }
+             }
+           }
+
+           [zoom<2]{
+
+             text-opacity: 0;
+
+             [code='ME'],[code='AA'],[code='MO'], [code='LC'], [code='SI'] {
+
+
+                [diameter>800] {
+
+                   text-fill: #ffffff;
+                  text-opacity: 1;
+                  text-wrap-width: 1;
+
+                  [diameter<=1000]{
+                    text-size: 10;
+                  }
+                  [diameter>1000]{
+                    text-size: 14;
+                  }
+                }
+             }
+           }
+
+           [zoom=4]{
+             text-allow-overlap: false;
+             text-opacity: 0;
+
+             [diameter>40][diameter<=100]{
+               text-size: 12;
+               text-opacity: 1;
+             }
+
+             [diameter>100][diameter<=500]{
+               text-size: 14;
+               text-opacity: 1;
+             }
+           }
+
+
+           [zoom>=5]{
+             text-allow-overlap: false;
+             text-opacity: 0;
+
+             [diameter<=5]{
+               text-size: 12;
+               text-opacity: 1;
+               text-halo-radius: 0;
+               text-halo-fill: #000000;
+             }
+           }
+
+          }",
+          "sql": "SELECT * FROM opmbuilder.opm_301_moon_nomenclature_polygons"
+        }
+      },
+
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "[zoom>=2] {
+            #layer {
+              marker-width: 10;
+              marker-fill: #ffffff;
+              marker-fill-opacity: 0.9;
+              marker-file: url('https://s3.amazonaws.com/com.cartodb.users-assets.production/production/opmbuilder/assets/20180512202856np_moon-landing_1127070_FFFFFF.svg');
+              marker-allow-overlap: true;
+              marker-line-width: 0;
+              marker-line-color: #FFFFFF;
+              marker-line-opacity: 1;
+            }
+            #layer::labels {
+              text-name: [site];
+              text-face-name: 'DejaVu Sans Book';
+              text-size: 10;
+              text-opacity: 0;
+              text-fill: #FFFFFF;
+              text-label-position-tolerance: 0;
+              text-halo-radius: 0;
+              text-halo-fill: #6F808D;
+              text-dy: 12;
+              text-allow-overlap: true;
+              text-placement: point;
+              text-placement-type: dummy;
+            }
+          }
+          [zoom>=3] {
+            #layer {
+              marker-width: 15;
+            }
+            #layer::labels {
+              text-opacity: 1;
+            }
+          }",
+          "sql": "SELECT * FROM opmbuilder.opm_301_apollo_sites"
+        }
+      },
+
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "[zoom>=2] {
+            #layer {
+              marker-width: 10;
+              marker-fill: #ffffff;
+              marker-fill-opacity: 0.9;
+              marker-file: url('https://s3.amazonaws.com/com.cartodb.users-assets.production/production/opmbuilder/assets/20180512203031np_lunar-module_1119198_FFFFFF.svg');
+              marker-allow-overlap: true;
+              marker-line-width: 0;
+              marker-line-color: #FFFFFF;
+              marker-line-opacity: 1;
+            }
+            #layer::labels {
+              text-name: [site];
+              text-face-name: 'DejaVu Sans Book';
+              text-size: 10;
+              text-opacity: 0;
+              text-fill: #FFFFFF;
+              text-label-position-tolerance: 0;
+              text-halo-radius: 0;
+              text-halo-fill: #6F808D;
+              text-dy: 12;
+              text-allow-overlap: true;
+              text-placement: point;
+              text-placement-type: dummy;
+            }
+          }
+          [zoom>=3] {
+            #layer {
+              marker-width: 15;
+            }
+            #layer::labels {
+              text-opacity: 1;
+            }
+          }",
+          "sql": "SELECT * FROM opmbuilder.opm_301_luna_sites"
+        }
+      }
+    ]
+  }
+}
