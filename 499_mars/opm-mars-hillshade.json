@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "name": "opm-mars-hillshade",
+  "auth": {
+    "method": "open"
+  },
+  "layergroup": {
+    "version": "1.0.1",
+    "layers": [
+      {
+        "type": "http",
+        "options": {
+            "urlTemplate": "https://s3.us-east-2.amazonaws.com/opmmarstiles/hillshade-tiles/{z}/{x}/{y}.png",
+            "tms": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "name": "opm-mars-shaded-colour-mola-elevation",
+  "auth": {
+    "method": "open"
+  },
+  "layergroup": {
+    "version": "1.0.1",
+    "layers": [
+      {
+        "type": "http",
+        "options": {
+            "urlTemplate": "http://s3-eu-west-1.amazonaws.com/whereonmars.cartodb.net/mola-color/{z}/{x}/{y}.png",
+            "tms": true
+        }
+      }
+    ]
+  }
+}
