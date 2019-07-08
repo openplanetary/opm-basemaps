@@ -1,0 +1,85 @@
+{
+  "version": "0.0.1",
+  "name": "opm-mercury-basemap-v0-1",
+  "auth": {
+    "method": "open"
+  },
+  "layergroup": {
+    "version": "1.0.1",
+    "layers": [
+
+      {
+        "type": "plain",
+        "options": {
+            "color": "#8c8c8c",
+            "imageUrl": null
+        }
+      },
+
+      {
+        "type": "http",
+        "options": {
+            "urlTemplate": "http://access.planetserver.eu/planmap/mdis_mosaic_3857/{z}/{x}/{y}.png",
+            "tms": true
+        }
+      },
+
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#layer {
+            marker-width: 3.5;
+            marker-fill: #ffffff;
+            marker-fill-opacity: 0.9;
+            marker-allow-overlap: true;
+            marker-line-width: 1;
+            marker-line-color: #FFFFFF;
+            marker-line-opacity: 1;
+            marker-comp-op: multiply;
+          }
+          #layer::labels {
+            text-name: [feature_name];
+            text-face-name: 'Open Sans Regular';
+            text-size: 14;
+            text-fill: #FFFFFF;
+            text-label-position-tolerance: 0;
+            text-halo-radius: 1;
+            text-halo-fill: #000000;
+            text-dy: -10;
+            text-allow-overlap: false;
+            text-placement: point;
+            text-placement-type: dummy;
+          }",
+          "sql": "SELECT * FROM opmbuilder.mercury_nomenclature"
+        }
+      },
+
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#layer {
+            line-width: 0.75;
+            line-color: #ffffff;
+            line-opacity: 1;
+          }",
+          "sql": "SELECT * FROM opmbuilder.msgr_dem_usg_eq_i_v02_prep_clon0_small_smoothed_wgs84_1000m"
+        }
+      },
+
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#layer {
+            line-width: 1.5;
+            line-color: #ffffff;
+            line-opacity: 0.5;
+          }",
+          "sql": "SELECT * FROM opmbuilder.msgr_dem_usg_eq_i_v02_prep_clon0_small_smoothed_wgs84_2000m"
+        }
+      }
+    ]
+  }
+}

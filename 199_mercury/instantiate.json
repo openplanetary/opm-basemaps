@@ -1,0 +1,209 @@
+{
+  "layergroupid": "opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009",
+  "metadata": {
+    "layers": [
+      {
+        "type": "plain",
+        "id": "plain-layer0",
+        "meta": {
+          "stats": {}
+        },
+        "tilejson": {
+          "raster": {
+            "tilejson": "2.2.0",
+            "tiles": [
+              "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/plain-layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/plain-layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/plain-layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/plain-layer0/{z}/{x}/{y}.png"
+            ]
+          }
+        }
+      },
+      {
+        "type": "http",
+        "id": "http-layer0",
+        "meta": {
+          "stats": {}
+        },
+        "tilejson": {
+          "raster": {
+            "tilejson": "2.2.0",
+            "tiles": [
+              "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/http-layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/http-layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/http-layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/http-layer0/{z}/{x}/{y}.png"
+            ]
+          }
+        }
+      },
+      {
+        "type": "mapnik",
+        "id": "layer0",
+        "meta": {
+          "cartocss": "#layer {            marker-width: 3.5;            marker-fill: #ffffff;            marker-fill-opacity: 0.9;            marker-allow-overlap: true;            marker-line-width: 1;            marker-line-color: #FFFFFF;            marker-line-opacity: 1;            marker-comp-op: multiply;          }          #layer::labels {            text-name: [feature_name];            text-face-name: 'Open Sans Regular';            text-size: 14;            text-fill: #FFFFFF;            text-label-position-tolerance: 0;            text-halo-radius: 1;            text-halo-fill: #000000;            text-dy: -10;            text-allow-overlap: false;            text-placement: point;            text-placement-type: dummy;          }",
+          "stats": {
+            "estimatedFeatureCount": 521
+          },
+          "cartocss_meta": {
+            "rules": []
+          }
+        },
+        "tilejson": {
+          "vector": {
+            "tilejson": "2.2.0",
+            "tiles": [
+              "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer0/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer0/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer0/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer0/{z}/{x}/{y}.mvt"
+            ]
+          },
+          "raster": {
+            "tilejson": "2.2.0",
+            "tiles": [
+              "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer0/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer0/{z}/{x}/{y}.png"
+            ]
+          }
+        }
+      },
+      {
+        "type": "mapnik",
+        "id": "layer1",
+        "meta": {
+          "cartocss": "#layer {            line-width: 0.75;            line-color: #ffffff;            line-opacity: 1;          }",
+          "stats": {
+            "estimatedFeatureCount": 7274
+          },
+          "cartocss_meta": {
+            "rules": []
+          }
+        },
+        "tilejson": {
+          "vector": {
+            "tilejson": "2.2.0",
+            "tiles": [
+              "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer1/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer1/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer1/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer1/{z}/{x}/{y}.mvt"
+            ]
+          },
+          "raster": {
+            "tilejson": "2.2.0",
+            "tiles": [
+              "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer1/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer1/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer1/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer1/{z}/{x}/{y}.png"
+            ]
+          }
+        }
+      },
+      {
+        "type": "mapnik",
+        "id": "layer2",
+        "meta": {
+          "cartocss": "#layer {            line-width: 1.5;            line-color: #ffffff;            line-opacity: 0.5;          }",
+          "stats": {
+            "estimatedFeatureCount": 3597
+          },
+          "cartocss_meta": {
+            "rules": []
+          }
+        },
+        "tilejson": {
+          "vector": {
+            "tilejson": "2.2.0",
+            "tiles": [
+              "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer2/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer2/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer2/{z}/{x}/{y}.mvt",
+              "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer2/{z}/{x}/{y}.mvt"
+            ]
+          },
+          "raster": {
+            "tilejson": "2.2.0",
+            "tiles": [
+              "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer2/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer2/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer2/{z}/{x}/{y}.png",
+              "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/layer2/{z}/{x}/{y}.png"
+            ]
+          }
+        }
+      }
+    ],
+    "dataviews": {},
+    "analyses": [],
+    "tilejson": {
+      "vector": {
+        "tilejson": "2.2.0",
+        "tiles": [
+          "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.mvt",
+          "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.mvt",
+          "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.mvt",
+          "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.mvt"
+        ]
+      },
+      "raster": {
+        "tilejson": "2.2.0",
+        "tiles": [
+          "https://cartocdn-gusc-a.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.png",
+          "https://cartocdn-gusc-b.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.png",
+          "https://cartocdn-gusc-c.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.png",
+          "https://cartocdn-gusc-d.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.png"
+        ]
+      }
+    },
+    "url": {
+      "vector": {
+        "urlTemplate": "https://cartocdn-gusc-{s}.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.mvt",
+        "subdomains": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      },
+      "raster": {
+        "urlTemplate": "https://cartocdn-gusc-{s}.global.ssl.fastly.net/opmbuilder/api/v1/map/opmbuilder@18168573@6bd4ebc3e6ab845b7f161cb819e9780b:1562059770009/{z}/{x}/{y}.png",
+        "subdomains": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      }
+    }
+  },
+  "cdn_url": {
+    "templates": {
+      "http": {
+        "subdomains": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "url": "http://{s}.gusc.cartocdn.com"
+      },
+      "https": {
+        "subdomains": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "url": "https://cartocdn-gusc-{s}.global.ssl.fastly.net"
+      }
+    },
+    "http": "gusc.cartocdn.com",
+    "https": "cartocdn-gusc.global.ssl.fastly.net"
+  },
+  "last_updated": "2019-07-02T09:29:30.009Z"
+}
