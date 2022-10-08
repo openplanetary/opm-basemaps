@@ -18,8 +18,15 @@ Layers/themes/classification:
   - Peak
 - Geology
   - Geological units
+  - Geological linear fitures
+  - Goological point features
 - Mineralogy
   - Hydrous site locations
+  - point-based mineral species locations
+  - polygon-based mineral species locations
 - Landing sites
   - Landing ellipse
-- Exploration vehicle locations
+  - Exploration vehicle locations
+  - Exploration vehicle tracks
+  - Static lander locations
+  - Artefact locations
