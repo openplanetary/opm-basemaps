@@ -1,6 +1,6 @@
-# opm-basemaps
+# OPM Basemaps
 
-Rebooting OPM activities (Oct 2022), here are some notes to sharing with historic and new contributors.
+Rebooting OPM activities (Oct 2022) - Here are some notes to share with historic and new contributors.
 
 Main OPM interfaces:
 
@@ -15,15 +15,17 @@ Using these interfaces:
 - QGIS/ArcGIS users can visualise and use OPM basemaps, via WMTS end-points.
 - Map designer can modify or create new map styles using Maputnik.
 
+## OPM Layers Schema
+
 For all of this work, we need to define and agree on a common **"planetary map layers schema"**.
 That is, a set of attributes for different types of geospatial dataset that one can be used
 to style a given map layer. These datasets should also include information that is required
 for  geocoding and geospatially-based classification of other assets (eg: data product
 footprint).
 
-![OPM Overview](docs/opm-concept-overview.png)
+![OPM System Overview](docs/opm-concept-overview.png)
 
-## Layers/themes/classification
+### Layers/themes/classification
 
 - Nomenclature
   - IAU nomenclature
