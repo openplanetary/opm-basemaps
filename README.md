@@ -2,7 +2,7 @@
 
 Rebooting OPM activities (Oct 2022) - Here are some notes to share with historic and new contributors.
 
-Main OPM interfaces:
+Main (new) OPM interfaces:
 
 - OPM Datasets: interface to OPM geospatial datasets database (using RESTO, PostGIS/PostgresQL DB w/ STAC API)
 - OPM S3 Server: download interface to OPM raster (XYZ) and vector tiles (MBTiles, Geopackage), assets (fonts, symbols, patterns); source and 
