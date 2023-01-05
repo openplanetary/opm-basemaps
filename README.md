@@ -27,10 +27,9 @@ footprint).
 
 ### Layers/themes/classification
 
+- Lon/lat grids (base/primary)
+- Quadrangles
 - Nomenclature
-  - IAU nomenclature
-  - Quadrangles
-- Geography ?
 - Seasonal pole cap contours
 - Morphology
   - Craters
