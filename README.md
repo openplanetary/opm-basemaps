@@ -21,6 +21,8 @@ to style a given map layer. These datasets should also include information that 
 for  geocoding and geospatially-based classification of other assets (eg: data product
 footprint).
 
+![OPM Overview](docs/opm-concept-overview.png)
+
 ## Layers/themes/classification
 
 - Nomenclature
